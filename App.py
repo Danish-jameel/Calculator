@@ -15,7 +15,13 @@ st.markdown(
         font-weight: bold;
         text-align: center;
         color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 40px;
     }
     .calculator {
         background-color: #f0f0f0;
@@ -62,8 +68,9 @@ st.markdown(
     """, unsafe_allow_html=True
 )
 
-# App Title
+# App Title and Subtitle
 st.markdown('<div class="title">💻 Scientific Calculator</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Created by Danish Jameel</div>', unsafe_allow_html=True)
 
 # Create calculator container
 with st.container():
@@ -132,3 +139,4 @@ with st.container():
         st.markdown(f'<div class="result-box">Result: {result}</div>', unsafe_allow_html=True)
     
     st.markdown('</div>', unsafe_allow_html=True)  # Close calculator div
+
